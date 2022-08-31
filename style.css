@@ -5,7 +5,7 @@
 }
 
 body {
-  margin-top: 100px;
+  margin: 100px 0 50px 0;
 }
 
 h1,
@@ -13,6 +13,21 @@ h2,
 h3 {
   margin: 0;
 }
+
+@media (max-width: 767px) {
+  h2 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  .proj-link {
+    display: block;
+    text-align: center;
+    margin: 0 30%;
+  }
+}
+
 @media (min-width: 320px) {
   h1 {
     font-size: 35px;
@@ -28,7 +43,7 @@ h3 {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   h1 {
     font-size: 45px;
   }
@@ -42,7 +57,7 @@ h3 {
     width: 50%;
   }
 }
-@media screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
   h1 {
     font-size: 75px;
   }
