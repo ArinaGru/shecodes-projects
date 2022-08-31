@@ -13,13 +13,39 @@ h2,
 h3 {
   margin: 0;
 }
-
-h1 {
-  font-size: 96px;
+@media (min-width: 320px) {
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  .email-link {
+    font-size: 18px;
+  }
+  .about-app {
+    width: 100%;
+  }
 }
 
-h2 {
-  font-size: 48px;
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  .email-link {
+    font-size: 28px;
+  }
+  .about-app {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  h1 {
+    font-size: 75px;
+  }
 }
 
 h3 {
@@ -52,6 +78,10 @@ p {
   color: white;
 }
 
+.primary-link:hover {
+  color: white;
+}
+
 .secondary-link {
   border-radius: 4px;
   padding: 20px 15px;
@@ -79,7 +109,6 @@ p {
   display: flex;
   justify-content: center;
   color: var(--primary-color);
-  font-size: 28px;
   text-decoration: none;
 }
 
