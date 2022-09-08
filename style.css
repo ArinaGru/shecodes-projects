@@ -54,6 +54,40 @@ h3 {
   color: var(--secondary-font-color);
 }
 
+.introduction {
+  font-size: 18px;
+  line-height: 1.5;
+
+  margin: 129px 0 82px 0;
+  text-align: center;
+}
+
+.proj-link {
+  border: 1px solid var(--primary-color);
+  transition: 300ms ease-in-out;
+}
+
+.proj-link:hover,
+.proj-link:focus {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  background-color: var(--primary-bgcolor);
+}
+
+.proj-list {
+  font-size: 16px;
+  line-height: 1.88;
+  color: rgba(39, 33, 66, 0.7);
+}
+
+.hero-about {
+  margin-top: 239px;
+}
+
+.proj-card:not(:last-child){
+  margin-bottom: 70px;
+}
+
 @media (max-width: 767px) {
   h2 {
     text-align: center;
@@ -87,6 +121,7 @@ h3 {
   }
   .about-app {
     width: 100%;
+    padding: 0 61px;
   }
 }
 
@@ -136,10 +171,6 @@ p {
   font-size: 18px;
   line-height: 1.5;
   font-weight: 500;
-}
-
-.primary-link:hover {
-  color: white;
 }
 
 .about-paragraphs {
