@@ -22,7 +22,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top my-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top about-navbar">
             <div class="container">
                 <a class="navbar-brand" href="/index.html">ARINA HRUSHCHENKO</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -35,56 +35,65 @@
                             <a class="nav-link my-nav-link" aria-current="page" href="/index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active my-active my-nav-link" href="/about.html">About me</a>
+                            <a class="nav-link active my-active my-nav-link" href="/about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link my-nav-link" href="/about.html#contact">Contact me</a>
+                            <a class="nav-link my-nav-link" href="/about.html">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link my-nav-link" href="/about.html#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <section class="hero-about">
-        <h1 class="text-center">About me</h1>
-        <h3 class="text-center">Front-end developer from Czeh Republic</h3>
-    </section>
-    <div class="about-paragraphs text-center">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
-            aperiam provident tempora? Cumque adipisci, non dolorem quia, odit qui
-            alias veniam excepturi rem dolor fugit dignissimos, sed voluptatum
-            blanditiis harum.
-        </p>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <img src="/images/yoga.jpg" class="img-fluid p-2 shadow rounded" alt="yoga app" />
-            </div>
-            <div class="col-sm-4">
-                <img src="/images/weather.jpg" class="img-fluid p-2 shadow rounded" alt="weather app" />
-            </div>
-            <div class="col-sm-4">
-                <img src="/images/yogurt.jpg" class="img-fluid p-2 shadow rounded" alt="ice cream app" />
-            </div>
-        </div>
-    </div>
-    <div class="container work-inquiry-container">
-        <div>
-            <h2>Work Inquiry</h2>
-            <p>Let’s work together and i’ll help you by all my best</p>
-        </div>
-        <div>
-            <a href="https://www.linkedin.com/in/arina-hrushchenko-665a9823a/" class="primary-link proj-link">Let’s talk here</a>
-        </div>
-    </div>
+    <main>
 
-    <footer>
-        <div class="container">
-        <a href="mailto:arinagrushchenko@gmail.com" class="email-link" title="arinagrushchenko@gmail.com">
-            arinagrushchenko@gmail.com </a></div>
-    </footer>
+        <section class="hero-about">
+            <div class="container d-flex align-items-center">
+                <div class="about-me-container">
+                    <h1>Hi I am Arina Hrushchenko</h1>
+                    <h2 class="profession-title">Front-end developer, based in Czech Republic</h2>
+                    <p class="about-me-description">As an enthusiastic and detail-oriented Front-End engineer I am
+                        seeking an entry-level position
+                        with
+                        Company where I can apply my passion for coding to a talented engineering team to develop
+                        quality
+                        solutions. I have an experience in mobile-first development of web applications using HTML, CSS,
+                        JavaScript. And keep learning React.With a passion for both personal growth and software
+                        development.</p>
+                    <a href="./work.html" class="primary-link proj-link" title="View all project">View all
+                        project</a>
+                </div>
+                <img src="/images/arina.jpg" class="img-fluid rounded d-none d-md-block my-img" alt="Arina" />
+            </div>
+        </section>
+        <div class="container work-inquiry-container">
+            <div>
+                <h2>Work Inquiry</h2>
+                <p>Let’s work together and i’ll help you by all my best</p>
+            </div>
+            <div class="text-center">
+                <a href="https://www.linkedin.com/in/arina-hrushchenko-665a9823a/" class="primary-link proj-link"
+                    target="_blank">Let’s talk here</a>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <a href="mailto:arinagrushchenko@gmail.com" class="email-link" title="arinagrushchenko@gmail.com">
+                    arinagrushchenko@gmail.com </a>
+                <ul class="social-list">
+                    <li class="social-list__item"> <a href="" class="social-list__link" target="_blank"><img
+                                src="/images/instagram.svg" alt="Link to my Instagram"></a>
+                    </li>
+                    <li class="social-list__item"><a href="" class="social-list__link" target="_blank"><img
+                                src="/images/facebook.svg" alt="Link to my Facebook"></a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </main>
 </body>
 
 </html>

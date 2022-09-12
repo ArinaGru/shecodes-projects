@@ -24,6 +24,10 @@ h3 {
   background-color: var(--secondary-bgcolor);
 }
 
+.about-navbar {
+  background-color: var(--primary-bgcolor);
+}
+
 .my-collapse {
   flex-grow: initial;
 }
@@ -72,10 +76,6 @@ h3 {
   color: rgba(39, 33, 66, 0.7);
 }
 
-.hero-about {
-  margin-top: 239px;
-}
-
 .proj-card:not(:last-child) {
   margin-bottom: 70px;
 }
@@ -115,6 +115,24 @@ footer {
   margin-left: 30px;
 }
 
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.about-paragraphs {
+  margin: 30px 0;
+}
+
+.about-paragraphs p {
+  margin: 10px;
+}
+
 @media (max-width: 767px) {
   h2 {
     text-align: center;
@@ -127,6 +145,9 @@ footer {
     text-align: center;
     margin: 0 auto;
   }
+  .about-me-container {
+    text-align: center;
+  }
 }
 
 @media (min-width: 320px) {
@@ -134,6 +155,9 @@ footer {
     background-color: var(--secondary-bgcolor);
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+  .hero-about {
+    margin-top: 100px;
   }
   h1 {
     font-size: 35px;
@@ -145,6 +169,15 @@ footer {
   }
   .email-link {
     font-size: 18px;
+    display: flex;
+    justify-content: center;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .email-link:hover {
+    text-decoration: none;
+    color: #000;
   }
   .about-app {
     width: 100%;
@@ -167,6 +200,40 @@ footer {
     justify-content: space-between;
     align-items: center;
   }
+  .profession-title {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+
+    color: #272142;
+
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
+  .about-me-description {
+    font-size: 16px;
+    line-height: 1.88;
+
+    color: rgba(39, 33, 66, 0.7);
+    margin-bottom: 28px;
+  }
+  .primary-link {
+    border-radius: 4px;
+    padding: 18px 30px;
+    margin: 0 auto;
+    text-decoration: none;
+    text-transform: capitalize;
+    background: var(--primary-color);
+    box-shadow: var(--box-shadow);
+    color: white;
+
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 500;
+    display: block;
+    max-width: 240px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -187,65 +254,43 @@ footer {
     padding-top: 200px;
     padding-bottom: 200px;
   }
+  .hero-about {
+    margin-top: 170px;
+  }
   .introduction {
     margin: 129px 0 82px 0;
   }
   .work-inquiry-container {
-    padding: 45px 120px;
+    padding: 45px 80px;
     margin-top: 130px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+  .my-img {
+    max-width: 360px;
+    height: fit-content;
+  }
+  .about-me-container {
+    padding-right: 50px;
+  }
+  .primary-link {
+    margin: 0;
+  }
 }
+
 @media (min-width: 1280px) {
   h1 {
     font-size: 75px;
   }
-}
-
-h3 {
-  font-size: 24px;
-  opacity: 0.7;
-}
-
-p {
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-.primary-link {
-  border-radius: 4px;
-  padding: 18px 30px;
-  margin: 0;
-  text-decoration: none;
-  text-transform: capitalize;
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
-
-  font-size: 18px;
-  line-height: 1.5;
-  font-weight: 500;
-}
-
-.about-paragraphs {
-  margin: 30px 0;
-}
-
-.about-paragraphs p {
-  margin: 10px;
-}
-
-.email-link {
-  display: flex;
-  justify-content: center;
-  color: #000;
-  text-decoration: none;
-}
-
-.email-link:hover {
-  text-decoration: none;
-  color: #000;
+  .work-inquiry-container {
+    padding: 45px 120px;
+  }
+  .my-img {
+    max-width: 560px;
+  }
+  .about-me-container {
+    padding-right: 100px;
+  }
 }
