@@ -103,12 +103,21 @@ footer {
 .social-list__link {
   width: 40px;
   height: 40px;
+  color: var(--primary-color);
 
   background-color: var(--secondary-bgcolor);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: 300ms ease-in-out;
+}
+
+.social-list__link:hover,
+.social-list__link:focus {
+  color: var(--secondary-bgcolor);
+  background-color: var(--primary-color);
 }
 
 .social-list__item + .social-list__item {
@@ -327,7 +336,15 @@ p {
     padding-right: 100px;
   }
 }
+
 .icon-svg {
   height: 20px;
   width: 20px;
+  fill: currentColor;
+  transition: fill 300ms ease-in-out;
+}
+
+.social-list__link:hover .icon-svg,
+.social-list__link:focus .icon-svg {
+  fill: var(--secondary-bgcolor);
 }
